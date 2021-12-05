@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="setdate.css">
+    <script defer src="setdate.js"></script>
+</head>
+
+<body>
+    <h1>Countdown</h1>
+    <div class="input">
+        <p id="warning-name" class="warning-event hidden">
+            Please submit a name for your event!
+        </p>
+        <input type="text" placeholder="Name of event?" id="form-event" oninput="inputEvent()" class="input-text" />
+        <p id="warning-date" class="warning-event hidden">
+            Please submit a date for your event!
+        </p>
+        <input type="date" id="form-date" oninput="inputDate()" class="input-text" />
+        <button class="buttons-time" type="submit" onclick="submitForm()">
+            Count down for me!
+        </button>
+    </div>
+    <div id="buttons-select" class="hidden">
+        <button class="buttons-time" id="giveHours" onclick="displayTime('hours')">
+            Give me hours!
+        </button>
+        <button class="buttons-time" id="giveMinutes" onclick="displayTime('minutes')">
+            Give me minutes!
+        </button>
+        <button class="buttons-time" id="giveSeconds" onclick="displayTime('seconds')">
+            Give me seconds!
+        </button>
+        <button class="buttons-time hidden" id="giveDays" onclick="displayTime('days')">
+            Give me days!
+        </button>
+    </div>
+
+    <div class="container">
+        <p id="countdown-display" class="countdown-display">-</p>
+        <p class="countdown-text">
+            <span id="countdown-text">Days</span>
+            'til
+            <span id="countdown-event">event</span>
+            !
+        </p>
+    </div>
+
+    <div class="otherDate">
+        <button class="buttons-time">
+            <a href="index.html" class="link">
+                View countdown to Christmas!
+            </a>
+        </button>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <h1>Christmas Countdown 🎄</h1>
+    <div class="buttons">
+        <button class="buttons-time" id="giveHours" onclick="displayTime('hours')">
+            Give me hours!
+        </button>
+        <button class="buttons-time" id="giveMinutes" onclick="displayTime('minutes')">
+            Give me minutes!
+        </button>
+        <button class="buttons-time" id="giveSeconds" onclick="displayTime('seconds')">
+            Give me seconds!
+        </button>
+        <button class="buttons-time hidden" id="giveDays" onclick="displayTime('days')">
+            Give me days!
+        </button>
+    </div>
+    <div class="container">
+        <p id="countdown-display" class="countdown-display">-</p>
+        <p class="countdown-text"><span id="countdown-text">Days</span> 'til Christmas!</p>
+    </div>
+    <div class="otherDate">
+        <button class="buttons-time">
+            <a href="setdate.html" class="link">
+                Set my own date!
+            </a>
+        </button>
+    </div>
+</body>
+
+</html>
